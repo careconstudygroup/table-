@@ -1,0 +1,100 @@
+.container {
+    button {
+        margin: 20px;
+
+        &:nth-child(2) {
+            margin-left: 20px;
+        }
+    }
+
+    .btn-simple {
+        display: none;
+    }
+
+    table {
+        thead {
+            display: block;
+        }
+
+        tbody {
+            display: block;
+            overflow-y: scroll;
+            height: 500px;
+        }
+
+        .number {
+            min-width: 100px;
+        }
+
+        .first {
+            min-width: 200px;
+        }
+
+        .last {
+            min-width: 200px;
+        }
+
+        .handle {
+            width: 1000px;
+        }
+
+        .blank {
+            min-width: 100px;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .btn-simple {
+        display: block!important;
+    }
+
+    table {
+        border: 0;
+
+        caption {
+            font-size: 1.3em;
+        }
+
+        thead {
+            border: none;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+        tbody {
+            padding: 10px;
+        }
+
+        tr {
+            border-bottom: 3px solid #ddd;
+            display: block;
+            margin-bottom: 0.625em;
+
+            .handle {
+                width: 100%!important;
+            }
+
+            td {
+                border-bottom: 1px solid #ddd;
+                font-size: 0.8em;
+                text-align: right;
+
+                &::before {
+                    content: attr(data-label);
+                    float: left;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}

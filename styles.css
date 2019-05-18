@@ -1,0 +1,82 @@
+.container button {
+  margin: 20px;
+}
+.container button:nth-child(2) {
+  margin-left: 20px;
+}
+.container .btn-simple {
+  display: none;
+}
+.container table thead {
+  display: block;
+}
+.container table tbody {
+  display: block;
+  overflow-y: scroll;
+  height: 500px;
+}
+.container table .number {
+  min-width: 100px;
+}
+.container table .first {
+  min-width: 200px;
+}
+.container table .last {
+  min-width: 200px;
+}
+.container table .handle {
+  width: 1000px;
+}
+.container table .blank {
+  min-width: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .btn-simple {
+    display: block !important;
+  }
+
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tbody {
+    padding: 10px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table tr .handle {
+    width: 100% !important;
+  }
+  table tr td {
+    border-bottom: 1px solid #ddd;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  table tr td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table tr td:last-child {
+    border-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

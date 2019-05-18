@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <button disabled type="button" class="btn auth-btn btn-primary float-right">承認</button>
+            <button type="button" class="btn btn-info float-right btn-simple">簡易表示</button>
+            <button type="button" class="col-4 col-sm-2 btn bulk-Auth-button btn-info float-right">一括選択</button>
+            <div class="d-flex align-items-center col-md-5">
+                <input class="searchbox form-control col-xs-4" type="text" placeholder="検索名">
+            </div>
+            <table class="table table-striped sticky_table col-lg-12 user_table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th class="number" scope="col">#</th>
+                        <th class="first" scope="col">First</th>
+                        <th class="last" scope="col">Last</th>
+                        <th class="handle" scope="col">Handle</th>
+                        <th class="blank" scope="col">&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="number" data-label="#" scope="row">1</th>
+                        <td class="first"  data-label="氏名">Mark</td>
+                        <td class="last"   data-label="Last">Otto</td>
+                        <td class="handle" data-label="Handle">@mdo</td>
+                        <td class="blank"  data-label=""><input class="user_auth" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="number" data-label="#" scope="row">2</th>
+                        <td class="first"  data-label="氏名">Jacob</td>
+                        <td class="last"   data-label="Last">Thornton</td>
+                        <td class="handle" data-label="Handle">@fat</td>
+                        <td class="blank" data-label=""><input class="user_auth" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="number" data-label="#" scope="row">3</th>
+                        <td class="first"  data-label="氏名">Larry</td>
+                        <td class="last"   data-label="Last">the Bird</td>
+                        <td class="handle" data-label="Handle">@twitter</td>
+                        <td class="blank" data-label=""><input class="user_auth" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td data-label="#" scope="row">1</th>
+                        <td data-label="氏名">Mark</td>
+                        <td data-label="Last">Otto</td>
+                        <td data-label="Handle">@mdo</td>
+                        <td data-label=""><input class="user_auth" type="checkbox"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
